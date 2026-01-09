@@ -28,7 +28,7 @@ This skill packages that process so other founders can use it.
 Add to your `~/.claude/skills/` directory:
 
 ```bash
-git clone https://github.com/bayramannakov/founder-voice-ghostwriter-skill.git ~/.claude/skills/founder-voice-ghostwriter
+git clone https://github.com/bayramannakov/founder-voice-ghostwriter.git ~/.claude/skills/founder-voice-ghostwriter
 ```
 
 ### For other Agent Skill platforms

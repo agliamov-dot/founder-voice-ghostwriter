@@ -1,9 +1,11 @@
 ---
 name: founder-voice-ghostwriter
 description: Collaborative ghostwriting for founders and experts. Extracts first-hand knowledge through structured interviews and transforms it into authentic, non-AI-sounding content. Use when user wants to write thought leadership, blog posts, founder stories, comparison pages, or says things like "help me write", "make this authentic", "rewrite in my voice", or mentions avoiding AI detection.
-author: Bayram Annakov
-author_url: https://linkedin.com/in/bayramannakov
-url: https://onsa.ai
+license: MIT
+metadata:
+  author: Bayram Annakov
+  author_url: https://linkedin.com/in/bayramannakov
+  url: https://onsa.ai
 ---
 
 # Founder Voice Ghostwriter
