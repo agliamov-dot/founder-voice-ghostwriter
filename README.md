@@ -1,92 +1,70 @@
 # Founder Voice Ghostwriter
 
-An [Agent Skill](https://agentskills.io) for collaborative ghostwriting that extracts first-hand founder knowledge and transforms it into authentic, non-AI-sounding content.
+An [Agent Skill](https://agentskills.io) for founders who need content but don't want generic SEO agency output.
 
-## What It Does
+## The Problem
 
-This skill guides AI agents through a structured interview process to:
+You know you need to do SEO, write articles, thought leadership. Your options:
 
-1. **Calibrate to your voice** - Analyzes articles you've written or admire to understand your style
-2. **Extract your knowledge** - Asks specific questions to pull out real numbers, stories, and experiences
-3. **Draft in your voice** - Writes content that sounds like you, not like AI
-4. **Refine together** - Iterates based on your feedback
+1. **Hire an SEO agency** → Get generic "7 Ways to..." articles without your voice
+2. **Hire a PR agency** → Expensive, scheduling interviews, waiting for content
 
-## Why I Built This
+## A Third Option
 
-I was working with Claude to write SEO content for [Onsa.ai](https://onsa.ai). The first drafts were... fine. Generic. Obviously AI-generated.
+You're browsing LinkedIn late at night. You spot an article that resonates—the voice, the specifics, the honesty. You have your own take on the topic from your experience.
 
-Then something clicked. Instead of asking Claude to write, I had it interview me. Extract the real stories. The specific numbers. The honest tradeoffs.
+Open Claude Code (or any agent supporting the [Agent Skills standard](https://agentskills.io)), say: "Here's an article I like the style of. I have things to say on this topic. Let's create something."
 
-The result was content that sounded like me—because it was built from my actual experiences.
+The interview starts—like with a PR agency, but right now:
+- "What's your experience with this?"
+- "Give me specific numbers"
+- "What didn't work?"
 
-This skill packages that process so other founders can use it.
+And you can simultaneously:
+- Pull data from your analytics
+- Research competitors
+- Check best practices
+- Look up a customer's website for examples
+
+All in the moment. When you have inspiration and things to say—not when a PR manager found a slot in their calendar.
 
 ## Installation
-
-### For Claude Code users
-
-Add to your `~/.claude/skills/` directory:
 
 ```bash
 git clone https://github.com/bayramannakov/founder-voice-ghostwriter.git ~/.claude/skills/founder-voice-ghostwriter
 ```
 
-### For other Agent Skill platforms
-
-Copy `SKILL.md` and the `references/` folder to your skills directory.
-
-## Usage
-
-Just ask Claude to help you write something:
-
-- "Help me write a blog post about [topic]"
-- "I need to write a comparison page for my product"
-- "Make this draft sound more like me"
-
-The skill will guide you through the interview process.
+Works with any agent supporting the Agent Skills standard—Claude Code is just one of them.
 
 ## The Process
 
 ```
-┌─────────────────────────────────────────┐
-│  1. CONTEXT                             │
-│  What are you writing? For whom?        │
-└─────────────────┬───────────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────────┐
-│  2. VOICE CALIBRATION                   │
-│  Share articles you're proud of         │
-│  → AI learns your patterns              │
-└─────────────────┬───────────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────────┐
-│  3. INTERVIEW EXTRACTION                │
-│  Real numbers. Real stories.            │
-│  What surprised you? What failed?       │
-└─────────────────┬───────────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────────┐
-│  4. DRAFT                               │
-│  Story-driven, specific, honest         │
-│  Matches your calibrated voice          │
-└─────────────────┬───────────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────────┐
-│  5. REFINE                              │
-│  Your feedback → targeted edits         │
-└─────────────────────────────────────────┘
+1. VOICE CALIBRATION
+   Share articles you like → AI learns your style
+
+2. INTERVIEW EXTRACTION
+   Your stories. Your numbers. Your failures.
+
+3. DRAFTING
+   Story-driven, specific, honest
+   Matches your calibrated voice
+
+4. REFINEMENT
+   Your feedback → targeted edits
 ```
+
+## What It Won't Do
+
+This won't "10x your SEO" or "revolutionize your content strategy."
+
+What it will do: make it easier to get your voice out there. Maybe even help you find it—because the first step is showing what you like.
 
 ## Key Principles
 
-- **Lead with stories, not abstractions** - "I was reviewing logs late one night..." not "AI is transforming..."
-- **Include real specifics** - "10-15%" not "many", "Swiss salary registry" not "public data"
-- **Acknowledge competitor strengths** - Honesty builds trust
-- **End with dialogue, not sales** - "Find me on LinkedIn" not "Book a demo today!"
+- **Lead with stories** - "I was reviewing logs late one night..." not "AI is transforming..."
+- **Real specifics** - "10-15%" not "many"
+- **Acknowledge competitors** - Honesty builds trust
+- **Dialogue, not sales** - "Find me on LinkedIn" not "Book a demo today!"
 
 ## Files
 
@@ -95,12 +73,8 @@ founder-voice-ghostwriter/
 ├── SKILL.md                 # Main skill instructions
 ├── references/
 │   └── voice-guide.md       # Detailed patterns & examples
-└── README.md                # This file
+└── README.md
 ```
-
-## Examples
-
-See the `references/voice-guide.md` for before/after examples showing the transformation from generic AI content to authentic founder voice.
 
 ## About
 
