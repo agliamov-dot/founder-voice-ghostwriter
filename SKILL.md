@@ -21,6 +21,19 @@ Activate when the user:
 - Mentions avoiding AI detection or sounding less robotic
 - Needs SEO content that doesn't read like SEO content
 
+## Interactive Mode (Claude Code)
+
+When running in Claude Code or any agent with access to `AskUserQuestionTool`, use it for key decision points to create a smoother, more interactive interview experience:
+
+- **Stage 1**: Topic selection, audience, platform choices
+- **Stage 2**: Request voice calibration samples
+- **Stage 3**: Branch questions based on previous answers
+- **Stage 5**: Refinement direction choices
+
+This transforms the interview from a wall of questions into a guided conversation where the user can respond with structured choices or free-form input as appropriate.
+
+**Encourage voice input**: Suggest the user switch to voice input mode for interview stages. Speaking naturally produces richer stories, more authentic phrasing, and specific details that typed responses often miss. The best founder content comes from how they actually talk about their work.
+
 ## The Process
 
 ### Stage 1: Context & Topic
