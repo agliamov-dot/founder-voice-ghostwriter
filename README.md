@@ -36,6 +36,32 @@ git clone https://github.com/bayramannakov/founder-voice-ghostwriter.git ~/.clau
 
 Works with any agent supporting the Agent Skills standard—Claude Code is just one of them.
 
+## Telegram Bot (guided interview)
+
+You can run the same interview flow as a Telegram bot that collects inputs and produces a ready-to-use prompt.
+
+### Requirements
+
+- Python 3.10+
+- A Telegram bot token (from [@BotFather](https://t.me/botfather))
+
+### Setup
+
+```bash
+cd telegram_bot
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+export TELEGRAM_BOT_TOKEN="your-telegram-token"
+python bot.py
+```
+
+### Usage
+
+1. Open your bot and run `/start`.
+2. Answer the guided questions (topic, audience, voice samples, interview questions).
+3. The bot returns a draft summary and a final prompt you can paste into any LLM.
+
 ## The Process
 
 ```
@@ -73,6 +99,9 @@ founder-voice-ghostwriter/
 ├── SKILL.md                 # Main skill instructions
 ├── references/
 │   └── voice-guide.md       # Detailed patterns & examples
+├── telegram_bot/
+│   ├── bot.py               # Telegram bot flow
+│   └── requirements.txt     # Bot dependencies
 └── README.md
 ```
 
